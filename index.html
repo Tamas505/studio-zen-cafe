@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Zen Café • Művészet, kávé, nyugalom</title>
+  <meta name="description" content="Egy kávézó, ahol művészet és nyugalom találkozik. Barátságos hangulat, minőségi kávék, könnyed desszertek." />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="hero container" aria-label="Bevezető">
+    <div class="hero-card" role="img" aria-label="Kávés csésze a pulton, meleg hangulatú kávézó">
+      <div class="hero-content">
+        <h1 class="brand">Studio Zen Café</h1>
+        <p class="tagline">Művészet, kávé és nyugalom egy helyen.</p>
+        <a href="#kapcsolat" class="cta">Asztalfoglalás</a>
+      </div>
+    </div>
+  
+  </header>
+
+  <main>
+    <section class="container about" id="rolunk" aria-labelledby="about-title">
+      <picture class="about-visual">
+        <img src="img/fozo.png" alt="Kávéfőző illusztráció" width="450" height="450" loading="lazy" decoding="async" />
+      </picture>
+      <div class="about-copy">
+        <div class="card">
+          <h2 id="about-title">Rólunk</h2>
+          <p>Zen a kávéban, harmónia a művészetben. Egy kis kávézó, ahol a békés légkör találkozik az inspiráló alkotással – barista szeretettel és szezonális alapanyagokkal.</p>
+          <ul>
+            <li>Speciális eszpresszó és filter kávék</li>
+            <li>Friss péksütemények, könnyű desszertek</li>
+            <li>Hétvégi akusztikus minikoncertek</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments" id="pillanatok" aria-labelledby="moments-title">
+      <h2 id="moments-title">Pillanatok</h2>
+      <div class="gallery">
+        <article class="card">
+          <picture>
+            <img src="img/coffee.jpg" alt="Frissen készült cappuccino" loading="lazy" decoding="async">
+          </picture>
+          <p>Kávé</p>
+        </article>
+        <article class="card">
+          <picture>
+            <img src="img/art.jpg" alt="Festmény részlete a falon" loading="lazy" decoding="async">
+          </picture>
+          <p>Művészet</p>
+        </article>
+        <article class="card">
+          <picture>
+            <img src="img/music.jpg" alt="Akusztikus gitár a sarokban" loading="lazy" decoding="async">
+          </picture>
+          <p>Zene</p>
+        </article>
+        <article class="card">
+          <picture>
+            <img src="img/people.jpg" alt="Vendégek beszélgetnek kávé mellett" loading="lazy" decoding="async">
+          </picture>
+          <p>Emberek</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="kapcsolat" aria-labelledby="contact-title">
+      <h2 id="contact-title">Kapcsolat</h2>
+      <div class="contact-wrap">
+        <div class="info" aria-label="Elérhetőség">
+          <p><strong>Nyitvatartás:</strong> H–V: 8:00–18:00</p>
+          <p><strong>Cím:</strong> 1199 Budapest, Fő utca 1.</p>
+          <p><strong>Email:</strong> <a href="mailto:info@studiozencafe.com">info@studiozencafe.com</a></p>
+        </div>
+        <form action="#" method="post" aria-label="Üzenet küldése">
+          <div>
+            <label for="name">Név</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Név" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" required>
+          </div>
+          <div>
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" placeholder="Írj nekünk…" required></textarea>
+          </div>
+          <button type="submit">Küldés</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    © 2025 Studio Zen Café • Designed & coded by Kőműves Tamás
+  </footer>
+</body>
+</html>
